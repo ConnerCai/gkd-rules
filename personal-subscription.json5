@@ -1,7 +1,7 @@
 {
   "id": 2026102401,
   "name": "个人广告补充规则",
-  "version": 6,
+  "version": 7,
   "apps": [
     {
       "id": "com.jin10",
@@ -146,6 +146,82 @@
                 "com.baidu.netdisk.ui.MainActivity"
               ],
               "matches": "[text^=\"跳过\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.dw.btime",
+      "name": "亲宝宝",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.dw.btime.AdScreenActivity"
+              ],
+              "matches": "[id=\"com.dw.btime:id/ad_screen_skip_btn_v1\"][text^=\"跳过\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.hexin.android.futures",
+      "name": "同花顺期货通",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "广告弹窗-关闭广告",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.hexin.plat.android.Hexin"
+              ],
+              "matches": "[id=\"com.hexin.android.futures:id/closeImageView\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.sdu.didi.psnger",
+      "name": "滴滴",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.didi.sdk.app.MainActivity"
+              ],
+              "matches": "[id=\"com.sdu.didi.psnger:id/skip_ad_ll\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.autonavi.minimap",
+      "name": "高德地图",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.autonavi.map.activity.NewMapActivity"
+              ],
+              "matches": "@[clickable=true][visibleToUser=true] > [text=\"跳过广告\"][visibleToUser=true]"
             }
           ]
         }
