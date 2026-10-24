@@ -1,7 +1,7 @@
 {
   "id": 2026102401,
   "name": "个人广告补充规则",
-  "version": 4,
+  "version": 5,
   "apps": [
     {
       "id": "com.jin10",
@@ -120,6 +120,25 @@
                 "com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity"
               ],
               "matches": "[id=\"com.sankuai.meituan.takeoutnew:id/ll_skip\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.baidu.netdisk",
+      "name": "百度网盘",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.baidu.netdisk.ui.MainActivity"
+              ],
+              "matches": "[id=\"com.baidu.netdisk:id/vilon_close_miss\"][clickable=true][visibleToUser=true]"
             }
           ]
         }
