@@ -1,0 +1,117 @@
+{
+  "id": 2026102401,
+  "name": "个人广告补充规则",
+  "version": 2,
+  "apps": [
+    {
+      "id": "com.jin10",
+      "name": "金十数据",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "局部广告-底部广告弹窗",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.jin10.lgd.biz.MainActivity"
+              ],
+              "matches": "[id=\"com.jin10:id/fr_close\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tv.danmaku.bili",
+      "name": "哔哩哔哩",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "tv.danmaku.bili.MainActivityV2"
+              ],
+              "matches": "[id=\"tv.danmaku.bili:id/count_down\"][text*=\"跳过\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.youdao.dict",
+      "name": "网易有道词典",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "弹窗提示-评分邀请",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.youdao.dict.activity.DictQueryActivity"
+              ],
+              "matches": "[id=\"com.youdao.dict:id/btn_never\"][text=\"不再提醒\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        },
+        {
+          "key": 10002,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.youdao.dict.activity.DictSplashActivity"
+              ],
+              "matches": "[id=\"com.youdao.dict:id/skip_bottom_view\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.hihonor.appmarket",
+      "name": "应用市场",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.hihonor.appmarket.module.main.MainActivity"
+              ],
+              "matches": "[id=\"com.hihonor.appmarket:id/btn_skip\"][text*=\"跳过\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.sankuai.meituan.takeoutnew",
+      "name": "美团外卖",
+      "groups": [
+        {
+          "key": 10001,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.sankuai.meituan.takeoutnew.ui.page.boot.SplashAdActivity"
+              ],
+              "matches": "[id=\"com.sankuai.meituan.takeoutnew:id/ll_skip\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "author": "ConnerCai",
+  "updateUrl": "https://raw.githubusercontent.com/ConnerCai/gkd-rules/main/personal-subscription.json5"
+}
