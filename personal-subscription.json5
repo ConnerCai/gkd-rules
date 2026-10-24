@@ -1,7 +1,7 @@
 {
   "id": 2026102401,
   "name": "个人广告补充规则",
-  "version": 5,
+  "version": 6,
   "apps": [
     {
       "id": "com.jin10",
@@ -139,6 +139,13 @@
                 "com.baidu.netdisk.ui.MainActivity"
               ],
               "matches": "[id=\"com.baidu.netdisk:id/vilon_close_miss\"][clickable=true][visibleToUser=true]"
+            },
+            {
+              "key": 1,
+              "activityIds": [
+                "com.baidu.netdisk.ui.MainActivity"
+              ],
+              "matches": "[text^=\"跳过\"][clickable=true][visibleToUser=true]"
             }
           ]
         }
