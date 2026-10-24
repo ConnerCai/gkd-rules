@@ -1,7 +1,7 @@
 {
   "id": 2026102401,
   "name": "个人广告补充规则",
-  "version": 2,
+  "version": 3,
   "apps": [
     {
       "id": "com.jin10",
@@ -17,6 +17,19 @@
                 "com.jin10.lgd.biz.MainActivity"
               ],
               "matches": "[id=\"com.jin10:id/fr_close\"][clickable=true][visibleToUser=true]"
+            }
+          ]
+        },
+        {
+          "key": 10002,
+          "name": "开屏广告-点击跳过",
+          "rules": [
+            {
+              "key": 0,
+              "activityIds": [
+                "com.jin10.lgd.splash.advert.AdvertActivity"
+              ],
+              "matches": "[id=\"com.jin10:id/anim_text_view\"][text*=\"跳过\"][clickable=true][visibleToUser=true]"
             }
           ]
         }
