@@ -1,7 +1,7 @@
 {
   "id": 2026102401,
   "name": "个人广告补充规则",
-  "version": 3,
+  "version": 4,
   "apps": [
     {
       "id": "com.jin10",
@@ -46,7 +46,8 @@
             {
               "key": 0,
               "activityIds": [
-                "tv.danmaku.bili.MainActivityV2"
+                "tv.danmaku.bili.MainActivityV2",
+                "tv.danmaku.bili.splash.ad.page.HotSplashActivity"
               ],
               "matches": "[id=\"tv.danmaku.bili:id/count_down\"][text*=\"跳过\"][clickable=true][visibleToUser=true]"
             }
